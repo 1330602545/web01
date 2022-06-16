@@ -1,0 +1,47 @@
+
+<!-- 轮播图 -->
+<view class='lunbo' style="position: relative; left: 2rpx; top: -2rpx" >
+
+  <swiper indicator-dots indicator-color="white" indicator-active-color="gray" autoplay="true" interval="3000" circular='true'  >
+    <swiper-item wx:for="{{img}}" wx:key="key">
+      <navigator>
+        <image src="{{item.img}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+
+</view>
+<!-- 堂食，自提 -->
+<view class='tab1'>
+  <navigator url='../menu/menu?id=1'>
+    <view class='kuang1'>
+      <image class='img1' src='../../images/5.jpg'></image>
+      <text>扫码点餐</text>
+    </view>
+  </navigator>
+  <navigator url='../menu/menu?id=0'>
+    <view class='kuang1'>
+      <image class='img1' src='../../images/4.jpg'></image>
+      <text>门店自取</text>
+    </view>
+  </navigator>
+</view>
+<!-- 三个逼 -->
+<view class='tab2'>
+  <view class='kuang2'>
+    <text>野菜季</text>
+    <image class='img2' src='../../images/6.jpg'></image>
+  </view>
+  <view class='kuang2'>
+    <text>订蛋糕</text>
+    <image class='img2' src='../../images/7.jpg'></image>
+  </view>
+  <view class='kuang2'>
+    <text>享优惠</text>
+    <image class='img2' src='../../images/8.jpg'></image>
+  </view>
+</view>
+<!-- 图 -->
+<view class='tab3'>
+  <image class='img3' src='../../images/3.jpg'></image>
+</view>

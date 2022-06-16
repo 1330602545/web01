@@ -1,0 +1,92 @@
+/* 底部 */
+.tupian{
+  width: 100%;
+  height: 420rpx;
+}
+
+.dibu{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background:#BDE6AE;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+}
+
+.title{
+  height: 80rpx;
+  width: 300rpx;
+padding-right: 120rpx;
+  margin-top: 35rpx;
+}
+
+.xuanze{
+  width:200rpx ;
+  height: 60rpx;
+  background: #7DE05A;
+  color: #f1f1f1;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.data1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  height: 160rpx;
+  background-color: #f2f2f2;
+ margin-left: 25rpx;
+ margin-right: 25rpx;
+ border-radius: 30rpx;
+}
+.data{
+  margin-bottom:80rpx ;
+}
+.img {
+  width: 120rpx;
+  height: 120rpx;
+  float: left;
+  padding-top: 25rpx;
+}
+.danjia {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: var(--themeColor);
+}
+.danjia:before {
+  content: "￥";
+  font-size: 14px;
+}
+.name_danjia{
+  padding-right: 280rpx;
+  width: 200rpx;
+  padding-top: 25rpx;
+}
+.shuliang{
+  padding-top: 90rpx;
+}
+.title1{
+  display: flex;
+  padding: 10rpx;
+  border-bottom:solid 5rpx gainsboro ;
+  width: 100%;
+}
+.num_tip{
+  padding-left: 50rpx;
+  width: 420rpx;
+}
+
+.num{
+  padding-left:50rpx ;
+}

@@ -1,0 +1,44 @@
+/* pages/huiyuanma/huiyuanma.wxss */
+.main{
+  padding-top: 150rpx;
+}
+.member{
+  height: 900rpx;
+  width: 90%;
+  border-radius: 5%;
+  background-color: white;
+  margin-left: 5%;
+}
+
+.pic{
+  height: 180rpx;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+}
+
+.ts{
+  border-radius: 50%;
+  width: 125rpx;
+  height: 125rpx;
+  margin-right: 10rpx;
+  background-color: whitesmoke;
+}
+
+.me17{
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.code{
+  text-align: center;
+}
+
+.txm{
+  width: 70%;
+  height: 300rpx;
+}
+
+.ewm{
+  width: 300rpx;
+  height: 300rpx;
+}

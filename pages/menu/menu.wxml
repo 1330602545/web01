@@ -1,0 +1,86 @@
+<!-- 搜索区 -->
+<view class='cont'>
+  <view class='search'>
+    <input bindinput="getSearch" placeholder="请输入你想搜索的内容" />
+  </view>
+  <image bindtap="goSearch" class="search_icon" src="../../images/search.png">
+  </image>
+</view>
+<!-- 菜单栏 -->
+<view class="main">
+  <scroll-view scroll-y="true" scroll-with-animation="true" bindscroll="rightScrollFn" class="left">
+    <view wx:for="{{shuzu}}" data-myid="{{index}}" wx:key="index" class="scroll-view-item left-tab {{leftActiveNum==index ? 'active' : ''}}" bindtap="leftClickFn">{{item.leibie}}
+    </view>
+  </scroll-view>
+
+  <scroll-view scroll-y="true" scroll-with-animation="true" bindscroll="rightScrollFn" class="right" scroll-into-view="top{{Tab}}">
+    <view wx:for="{{shuzu}}" wx:key="item" id="top{{index}}" class="scroll-view-item ">
+      <view class="titl">{{item.leibie}}</view>
+      <!-- 循环输入 -->
+      <block wx:for="{{menuArr}}" wx:key="key" wx:for-item="key">
+        <block wx:if="{{key.leibie==item.leibie}}">
+          <view class="caipin_item" data-id="{{item._id}}">
+            <image class="cai_img" src="{{key.img}}"></image>
+            <view class="cai_root2">
+              <view class="cai_title" data-index="{{index}}">{{key.name}}</view>
+              <view class="cai_sell">剩余：{{key.kucun}} </view>
+              <view class="price-stepper">
+                <view class="cai_price" data-index="{{index}}">{{key.jiage}}</view>
+                <view class="stepper">
+                  <view catchtap="minusCount" data-id="{{key._id}}">
+                    <image class="jiajian" src="/images/jian.png"></image>
+                  </view>
+                  <view class="value" data-id="{{key._id}}">{{key.num?key.num:0}}</view>
+                  <view catchtap="addCount" data-id="{{key._id}}">
+                    <image class="jiajian" src="/images/jia.png"></image>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<!-- 底部 -->
+<view class="dibu">
+  <view class="gouwuche" bindtap="open">
+    <image src="../../images/gouwuche.png"></image>
+  </view>
+  <view class="title">总计{{zongyuan}}元，{{zongjian}}件</view>
+  <view class="xuanze" bindtap="more_click" data-item="{{cartList}}">
+    <view>选好了</view>
+  </view>
+</view>
+<!-- 购物车 -->
+<view hidden="{{maskFlag}}" class="mask" bindtap="close"></view>
+<view hidden="{{maskFlag}}" class="cart_popup">
+  <view class="shopcart_title">
+    <view class="aaa" bindtap="close">返回</view>
+    <view class="bbb">购物车</view>
+    <view class="ccc" bindtap="clearcart">清空购物车</view>
+  </view>
+  <scroll-view class="cart_content_list">
+    <view wx:for="{{cartList}}" wx:key="index" class="zong">
+      <view class="caipin_item_a" data-id="{{item._id}}">
+        <image class="cai_img" src="{{item.img}}"></image>
+        <view class="cai_root2">
+          <view class="cai_title" data-index="{{index}}">{{item.name}}</view>
+          <view class="price-stepper">
+            <view class="cai_price" data-index="{{index}}">{{item.jiage}}</view>
+            <view class="stepper">
+              <view catchtap="minusCount" data-id="{{item._id}}">
+                <image class="jiajian" src="/images/jian.png"></image>
+              </view>
+              <view class="value" data-id="{{item._id}}">{{item.num?item.num:0}}</view>
+              <view catchtap="addCount" data-id="{{item._id}}">
+                <image class="jiajian" src="/images/jia.png"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

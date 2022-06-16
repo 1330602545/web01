@@ -1,0 +1,68 @@
+/* pages/renwuzhongxin/renwuzhongxin.wxss */
+
+.acc{
+  display: flex;
+  background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fbackgd%2Fcover%2F00%2F41%2F05%2F5bea2b80e6958.jpg%21%2Ffw%2F780%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648131718&t=9df96d3773d5beee3696c7e26a437448');
+  background-size: 100%;
+  height: 350rpx;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50rpx;
+  color: rgb(0, 95, 0);
+  
+}
+
+.circle{
+  display: flex;
+  background-color: rgb(147, 244, 148);
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.score{
+  font-size: 40rpx;
+  color: green;
+}
+
+.task-1{
+  display: flex;
+  width: 90%;
+  height: 200rpx;
+  background-color: white;
+  box-shadow: 0 0 30rpx 5rpx rgb(202, 200, 200);
+  margin-left: 4%;
+  border-radius: 15rpx;
+  margin-top: -30rpx;
+  padding: 10rpx;
+  flex-flow: column;
+}
+
+image{
+  width:100rpx;
+  height: 80rpx;
+  margin-right: 17rpx;
+}
+
+.detail{
+  display: flex;
+  flex-flow: row;
+  font-family: 'Times New Roman',Impact,  Times, serif,Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.detail-1{
+  display: flex;
+  flex-flow: column;
+}
+
+.shop{
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+

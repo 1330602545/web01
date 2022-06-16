@@ -1,0 +1,20 @@
+<!--pages/renwuzhongxin/renwuzhongxin.wxml-->
+<view class="task">
+  <view class="acc">
+    <view class="circle"> 
+      <text>积分</text>
+      <text class="score">0</text>
+    </view>
+  </view>
+  <view class="task-1">
+   <text class="buy">购买任务</text>
+   <view class="detail"> 
+    <image src="/image/me19.png"></image>
+    <view class="detail-1">
+      <text class="shop">购买商品</text>
+      <text>每消费1元，获得1积分</text>
+    </view> 
+    <button style="display:flex;justify-content: center;align-items: center;background-color:rgb(147, 244, 148);width:150rpx; color:green;height:60rpx;border-radius:15rpx;padding:0;margin-top:6rpx;left:40rpx;">去完成</button>
+   </view>
+  </view>
+</view>

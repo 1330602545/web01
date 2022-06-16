@@ -1,0 +1,27 @@
+/* pages/zengpin/zengpin.wxss */
+.gift{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-flow: column;
+  font-size: 25rpx;
+}
+
+image{
+  width:400rpx;
+  height: 400rpx;
+  margin-top: 60rpx;
+}
+
+.msg{
+  color: rgb(128, 125, 125);
+  margin-top: 30rpx;
+}
+
+.look{
+  border:1rpx solid red;
+  padding: 10rpx;
+  margin-top: 30rpx;
+  border-radius: 30rpx;
+  color: red;
+}

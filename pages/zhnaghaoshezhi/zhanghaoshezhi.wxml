@@ -1,0 +1,9 @@
+<!--pages/zhnaghaoshezhi/zhanghaoshezhi.wxml-->
+<view class="safe">
+  <view class="list"><text>安全中心</text><view class="aaa">></view></view>
+    
+ 
+  <view class="list"><text>授权管理</text><view class="aaa">></view></view>
+  <view class="list"><text>协议与规则</text><view class="aaa">></view></view>
+  <view class="list"><text>消息通知</text><view class="aaa">></view></view>
+</view>

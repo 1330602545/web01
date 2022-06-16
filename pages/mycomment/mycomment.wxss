@@ -1,0 +1,42 @@
+/* 顶部导航栏 */
+.tabs_root {
+  display: flex;
+  background: white;
+}
+
+.tabs_item {
+  height: 100rpx;
+  line-height: 100rpx;
+  flex: 1;
+  text-align: center;
+
+}
+
+.select_tab {
+  color: #f4c903;
+  border-bottom: 8rpx solid #f4c903;
+}
+
+/* 评价列表 */
+.item_root {
+  margin-bottom: 8rpx;
+  background: white;
+  padding: 15rpx;
+}
+
+.item_top {
+  display: flex;
+  align-items: center;
+}
+
+.item_img {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+
+.item_content {
+  margin: 20rpx;
+  color: gray;
+}

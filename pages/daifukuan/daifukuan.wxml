@@ -1,0 +1,25 @@
+
+<view>您的订单</view>
+<!-- 中部 -->
+<view class ="data">
+<view wx:for="{{shoppinglist}}" wx:key="index" class="data1">
+  <image src="{{item.img}}" class="img"></image>
+  <view class="name_danjia">
+    <view class="name">{{item.name}}</view>
+    <view class="danjia">{{item.jiage}}</view>
+  </view>
+  <view class="shuliang">×{{item.num}}</view>
+</view>
+</view>
+<!-- 底部 -->
+<view class="dibu">
+  <view class="title">总计{{zongji}}元，{{zongjian}}件</view>
+  <view class="xuanze" bindtap="zhifu" data-item="{{cartList}}">
+    <view>提交订单</view>
+  </view>
+</view>
+<view class="title1">
+ <text>桌号:</text>
+ <text wx:if="{{hasNum}}" class="num">{{hasNum}}</text>
+ <text wx:else class="num_tip"  bindtap="saoma">点击扫码识别桌号</text>
+</view>

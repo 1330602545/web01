@@ -1,0 +1,16 @@
+<!--pages/huiyuanma/huiyuanma.wxml-->
+<!-- <text>pages/huiyuanma/huiyuanma.wxml</text> -->
+<view class="main">
+  <view class="member">
+    <view class="pic">
+      <image class="ts"></image>
+        <text class="id">略略路</text>
+        <image class="me17" src="/image/me17.png"></image>
+    </view>
+    <view class="code">
+      <image class="txm" src="/image/me18.png"></image>
+      <image class="ewm" src="/image/me2.png"></image>
+    </view>
+  </view>
+</view>
+

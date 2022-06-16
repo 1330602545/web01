@@ -1,0 +1,69 @@
+.lunbo {
+  position: relative;
+  height: 438rpx;
+}
+
+.lunbo swiper {
+  height: 438rpx;
+  width: 100%;
+}
+
+.lunbo image {
+  height: 438rpx;
+  width: 100%;
+}
+
+.tab1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.img1 {
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.kuang1 {
+  height: 300rpx;
+  width: 300rpx;
+  border: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35rpx;
+  box-shadow: 10rpx 10rpx 10rpx 10rpx gray;
+}
+
+.tab2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.img2 {
+  height: 160rpx;
+  width: 160rpx;
+}
+
+.kuang2 {
+  height: 250rpx;
+  width: 200rpx;
+  border: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35rpx;
+  box-shadow: 10rpx 10rpx 10rpx 10rpx gray;
+}
+
+.tab3 {
+  margin-top: 50rpx;
+  width: 100%;
+  height: 330rpx;
+}
+
+.img3 {
+  width: 100%;
+  height: 330rpx;
+}

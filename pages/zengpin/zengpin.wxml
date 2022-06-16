@@ -1,0 +1,6 @@
+<!--pages/zengpin/zengpin.wxml-->
+<view class="gift">
+  <image src="/image/me20.png"></image>
+  <text class="msg">暂无赠品</text>
+  <view class="look">进店逛逛</view>
+</view>

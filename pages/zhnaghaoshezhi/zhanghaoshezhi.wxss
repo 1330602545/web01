@@ -1,0 +1,25 @@
+/* pages/zhnaghaoshezhi/zhanghaoshezhi.wxss */
+.safe{
+  margin-top: 60rpx;
+  display: flex;
+  flex-flow: column;
+}
+.list{
+  
+  width: 100%;
+  height: 60rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+}
+
+text{
+  margin-top: 10rpx;
+  display: flex;
+  margin-left: 30rpx;
+}
+.aaa{
+ margin-top: -40rpx;
+  float: right;
+  margin-right: 20rpx ;
+}

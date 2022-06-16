@@ -1,0 +1,24 @@
+<!-- 顶部导航栏 -->
+<view class="tabs_root">
+  <view class="tabs_item {{currentTab==index?'select_tab':''}}" wx:for="{{tabs}}" wx:key="index" bindtap="selectTab" data-index="{{index}}">
+    {{item}}
+  </view>
+</view>
+<!-- 评价列表 -->
+<view>
+  <view class="item_root" wx:for="{{list}}" wx:key="index">
+    <view class="item_top">
+      <image class="item_img" src="{{item.avatarUrl}}"></image>
+      <view>
+        <view>{{item.time}}</view>
+        <text>{{item.name}}评论：</text>
+      </view>
+
+    </view>
+    <view class="item_content">
+      {{item.content}}
+    </view>
+
+  </view>
+
+</view>
